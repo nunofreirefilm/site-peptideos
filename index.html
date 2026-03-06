@@ -5,256 +5,521 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Guia Simples dos Peptídeos</title>
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Using Inter as fallback for Geist if Geist isn't on Google Fonts -->
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=1.0">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
-
-    <!-- Ambient floating particles representing peptides/molecules -->
-    <div class="particles">
-        <div class="particle p1"></div>
-        <div class="particle p2"></div>
-        <div class="particle p3"></div>
-        <div class="particle p4"></div>
-        <div class="particle p5"></div>
+    <!-- Partículas / Flash de moléculas de luz estilo Galáxia -->
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
     </div>
 
-    <!-- Spotlight Effect -->
-    <div class="spotlight"></div>
+    <div class="concentric-bg"></div>
 
     <main>
-        <!-- ======== HERO SECTION ======== -->
-        <header class="hero">
-            <div class="hero-container">
-                <div class="glass-card hero-content">
-                    <div class="badge">Ciência Simplificada</div>
-                    <h1 class="hero-title">O Guia Simples<br>dos <span>Peptídeos</span></h1>
-                    <p class="hero-subtitle">
-                        Entenda o que são, para que servem e por que todo mundo está falando sobre eles. Sem linguagem
-                        difícil, sem termos científicos confusos e sem promessas irreais.
-                    </p>
-                    <a href="#comprar" class="btn-neon">QUERO ENTENDER OS PEPTÍDEOS</a>
+        <!-- HERO (Dark) -->
+        <section class="hero-section dark-section">
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <h1 class="hero-title">DESCUBRA O QUE NINGUÉM TE CONTA SOBRE <span
+                            class="highlight-cyan">PEPTÍDEOS!</span></h1>
+                    <p class="hero-subtitle">O guia definitivo para quem busca conhecimento, sem mitos ou termos
+                        complicados. Aprenda com rapidez e clareza.</p>
+                    <ul class="hero-list">
+                        <li>Sem linguagem difícil</li>
+                        <li>Sem termos confusos</li>
+                        <li>Sem promessas irreais</li>
+                    </ul>
+                    <a href="https://pay.kiwify.com.br/ZtHeS78" target="_blank" class="btn-solid btn-pulse">QUERO
+                        DOMINAR OS
+                        PEPTÍDEOS</a>
                 </div>
-            </div>
-        </header>
-
-        <!-- ======== SEÇÃO: O PROBLEMA ======== -->
-        <section class="problem-section" id="problem">
-            <div class="container">
-                <div class="split-layout">
-                    <div class="problem-visual">
-                        <div class="glow-orb"></div>
-                        <div class="glass-molecule">
-                            <div class="line l1"></div>
-                            <div class="line l2"></div>
-                            <div class="line l3"></div>
-                            <div class="line l4"></div>
-                            <div class="line l5"></div>
-
-                            <div class="node n-core"></div>
-                            <div class="node n1"></div>
-                            <div class="node n2"></div>
-                            <div class="node n3"></div>
-                            <div class="node n4"></div>
-                            <div class="node n5"></div>
+                <div class="hero-right">
+                    <div class="book-mockup">
+                        <div class="book-cover">
+                            <h2 class="book-title-big">O Guia Simples<br>dos Peptídeos</h2>
                         </div>
-                    </div>
-                    <div class="problem-text" data-aos="fade-up">
-                        <h2 class="section-title">Você já ouviu falar em peptídeos, mas nunca entendeu direito o que
-                            são?</h2>
-                        <p class="section-body">
-                            Sente que todo mundo comenta sobre isso — médicos, profissionais da saúde, influenciadores —
-                            e você fica com a sensação de estar “por fora”?
-                        </p>
-                        <p class="section-body">
-                            A verdade é que peptídeos não são um assunto novo, mas só agora estão sendo explicados ao
-                            público comum. Enquanto muita gente confunde com hormônios, acha perigoso ou ignora, outras
-                            pessoas estão se informando e tomando decisões conscientes sobre saúde, estética e
-                            bem-estar.
-                        </p>
-                        <p class="section-highlight">A informação básica muda tudo.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ======== SEÇÃO 3: A SOLUÇÃO ======== -->
-        <section class="solution-section" id="solucao">
-            <div class="container text-center" data-aos="fade-up">
-                <div class="solution-content">
-                    <h2 class="solution-title">Afinal, o que são peptídeos?</h2>
-                    <p class="solution-text">
-                        De forma simples: peptídeos são pequenas cadeias de aminoácidos que funcionam como <span
-                            class="highlight cyan">mensageiros</span> no nosso corpo. Eles “avisam” as células sobre o
-                        que fazer: produzir mais colágeno, ajudar na recuperação, participar de processos metabólicos e
-                        influenciar funções naturais do organismo. Você não precisa entender bioquímica para compreender
-                        isso. Este eBook traduz um assunto complexo para uma linguagem <span class="highlight cyan">100%
-                            humana</span>.
-                    </p>
-                </div>
-            </div>
-            <div class="soft-gradient-conic"></div>
-        </section>
-
-        <!-- ======== SEÇÃO 4: O QUE VOCÊ VAI APRENDER ======== -->
-        <section class="learn-section" id="aprender">
-            <div class="container learn-container">
-                <h2 class="section-title text-center" style="margin-bottom: 60px;">O que você vai descobrir nas páginas
-                    deste eBook</h2>
-
-                <div class="flow-container">
-                    <div class="flow-line"></div>
-
-                    <div class="flow-step" data-aos="fade-up" data-aos-delay="0">
-                        <div class="step-indicator">
-                            <span class="step-num">01</span>
-                            <div class="step-dot"></div>
-                        </div>
-                        <div class="flow-card">
-                            <p>O que são peptídeos
-                                (sem termos técnicos)</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-step" data-aos="fade-up" data-aos-delay="100">
-                        <div class="step-indicator">
-                            <span class="step-num">02</span>
-                            <div class="step-dot"></div>
-                        </div>
-                        <div class="flow-card">
-                            <p>Por que eles não são hormônios</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-step" data-aos="fade-up" data-aos-delay="200">
-                        <div class="step-indicator">
-                            <span class="step-num">03</span>
-                            <div class="step-dot"></div>
-                        </div>
-                        <div class="flow-card">
-                            <p>Para que eles vêm sendo usados hoje e por que ganham tanta atenção</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-step" data-aos="fade-up" data-aos-delay="300">
-                        <div class="step-indicator">
-                            <span class="step-num">04</span>
-                            <div class="step-dot"></div>
-                        </div>
-                        <div class="flow-card">
-                            <p>O que é mito e o que é verdade</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-step" data-aos="fade-up" data-aos-delay="400">
-                        <div class="step-indicator">
-                            <span class="step-num">05</span>
-                            <div class="step-dot"></div>
-                        </div>
-                        <div class="flow-card">
-                            <p>Para quem esse assunto faz sentido</p>
-                        </div>
-                    </div>
-
-                    <div class="flow-step" data-aos="fade-up" data-aos-delay="500">
-                        <div class="step-indicator">
-                            <span class="step-num">06</span>
-                            <div class="step-dot"></div>
-                        </div>
-                        <div class="flow-card">
-                            <p>O que observar antes de se aprofundar</p>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
             </div>
         </section>
 
-        <!-- ======== SEÇÃO 5: DIFERENCIAL E PÚBLICO ======== -->
-        <section class="differential-section" id="diferencial">
-            <div class="container diff-container">
-                <div class="diff-left">
-                    <h2 class="sticky-title">
-                        <span class="font-light dimmed">Por que esse eBook é</span><br>
-                        <span class="font-black purple">diferente?</span>
-                    </h2>
-                </div>
-                <div class="diff-right">
-                    <div class="diff-block">
-                        <div class="line-animated">
-                            <div class="cursor-glow"></div>
-                        </div>
-                        <p>Ele não tenta te impressionar, tenta te esclarecer.</p>
-                    </div>
-                    <div class="diff-block">
-                        <div class="line-animated">
-                            <div class="cursor-glow"></div>
-                        </div>
-                        <p>Não é um tratado científico, não é um curso avançado e não traz promessas milagrosas.</p>
-                    </div>
-                    <div class="diff-block">
-                        <div class="line-animated">
-                            <div class="cursor-glow"></div>
-                        </div>
-                        <p>É um primeiro passo, um guia introdutório, uma leitura rápida e clara. Feito para pessoas
-                            curiosas sobre saúde, e para quem quer parar de "achar" e começar a entender com segurança.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ======== SEÇÃO 6: OFERTA E PREÇO ======== -->
-        <section class="offer-section" id="oferta">
-            <div class="glow-orb-bg"></div>
-            <div class="container">
-                <div class="offer-card" data-aos="fade-up">
-                    <div class="border-glow"></div>
-                    <div class="offer-inner">
-                        <h2 class="offer-title">Por que custa apenas R$ 27,90?</h2>
-                        <div class="price-callout">
-                            <span class="currency">R$</span>
-                            <span class="price-value">27,90</span>
-                        </div>
-                        <p class="offer-body">
-                            Porque esse material foi pensado como produto de entrada. A ideia não é complicar, é abrir a
-                            porta. Por menos que o preço de um almoço, você terá clareza, informação confiável e
-                            segurança para buscar mais conhecimento. Leitura rápida e conteúdo direto que você pode ler
-                            no celular, tablet ou computador.
-                        </p>
-                        <a href="#comprar" class="btn-neon offer-btn">COMPRAR AGORA</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ======== SEÇÃO 7: FINAL END ======== -->
-        <section class="final-section" id="comprar">
-            <div class="radial-bottom-glow"></div>
-            <div class="container text-center final-container" data-aos="fade-up">
-                <h2 class="final-title">O conhecimento muda a forma como você enxerga tudo</h2>
-                <p class="final-body">
-                    Depois desse eBook, você vai entender de verdade quando alguém falar sobre peptídeos. Vai saber
-                    diferenciar informação de achismo e parar de se sentir perdido(a). Ignorar o tema não faz ele
-                    desaparecer. <span class="text-bold text-glow">Entender faz você ter controle.</span> Garanta agora
-                    seu acesso imediato.
+        <!-- PROBLEM (Light) -->
+        <section class="problem-section light-section">
+            <div class="container text-center" data-aos="fade-up" style="max-width: 900px; margin: 0 auto;">
+                <h2 class="section-title text-dark">Quantas vezes você já ouviu sobre Peptídeos e encontrou apenas
+                    <span class="highlight-red">opiniões contraditórias?</span>
+                </h2>
+                <p class="section-body text-darker mt-medium">
+                    De um lado, há quem diga que são a solução mágica para a saúde perfeita. Do outro, há quem
+                    confunda com hormônios e trate como perigoso. No meio disso, você se pergunta:
                 </p>
-                <a href="https://pay.kiwify.com.br/xxxxx" class="btn-neon pulse-ring">QUERO ENTENDER OS PEPTÍDEOS</a>
+            </div>
+
+            <div class="container mt-large">
+                <div class="bento-grid columns-2" data-aos="fade-up">
+                    <div class="info-card card-purple">
+                        <div class="info-card-header">
+                            <span class="small-icon">✕</span>
+                            <span class="info-title">OS MITOS</span>
+                        </div>
+                        <ul class="custom-list mt-medium" style="text-align: left;">
+                            <li>"Será que isso é hormônio disfarçado?"</li>
+                            <li>Comprar falsas promessas de curas milagrosas...</li>
+                            <li>Achar que todo peptídeo é anabolizante.</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card card-cyan">
+                        <div class="info-card-header">
+                            <span class="small-icon">✓</span>
+                            <span class="info-title">A VERDADE</span>
+                        </div>
+                        <ul class="custom-list mt-medium" style="text-align: left;">
+                            <li>Quem realmente está falando a verdade?</li>
+                            <li>Como separar mitos da realidade?</li>
+                            <li>Quais são os mecanismos reais de ação?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container dual-container mt-large">
+                <div class="dual-left" data-aos="fade-right">
+                    <h3 class="sub-heading">Se você já se pegou <span class="highlight-red">pensando...</span></h3>
+                    <ul class="quote-list">
+                        <li>"Por que todo mundo está falando sobre Ozempic, BPC-157 e GHRP?"</li>
+                        <li>"Será que isso não é perigoso para minha saúde sem acompanhamento?"</li>
+                        <li>"Sinto que estou ficando para trás nessas novidades médicas..."</li>
+                    </ul>
+                </div>
+                <div class="dual-right" data-aos="fade-left">
+                    <p class="section-body text-darker">
+                        A verdade é que a maioria das informações disponíveis na internet é <strong
+                            class="text-bold">superficial, técnica demais ou incompleta</strong>. E o pior: a falta de
+                        conhecimento básico impede você de entender a nova fronteira da medicina molecular.
+                    </p>
+                    <p class="section-body text-darker mt-medium">
+                        Então, você precisa ir além das informações genéricas apenas baseadas em achismos e entender
+                        <strong class="text-bold">os fundamentos dos peptídeos</strong> de modo claro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHISMO (Light / Transparente Custom) -->
+        <section class="achismo-section light-section-alt">
+            <div class="container text-center mb-large" data-aos="fade-up"
+                style="max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h2 class="section-title text-dark">O perigo do <span class="highlight-cyan">achismo</span></h2>
+                <p class="section-body text-darker mt-medium">
+                    A busca por informação sem conhecimento básico pode levar a confusões sérias. E não se engane:
+                    <strong class="text-bold">mesmo quem acha que sabe o que está lendo pode estar cometendo erros
+                        graves de interpretação.</strong>
+                </p>
+            </div>
+
+            <div class="container mt-large">
+                <ul class="bento-grid columns-3 danger-list" style="margin-top: 0;" data-aos="fade-up">
+                    <li style="flex-direction: column; align-items: flex-start; text-align: left; padding: 30px;">
+                        <span style="margin-bottom: 10px;">1</span>
+                        Dizer ou achar que todo peptídeo é simplesmente um anabolizante.
+                    </li>
+                    <li style="flex-direction: column; align-items: flex-start; text-align: left; padding: 30px;">
+                        <span style="margin-bottom: 10px;">2</span>
+                        Comprar falsas promessas ou esperar curas milagrosas em curto prazo.
+                    </li>
+                    <li style="flex-direction: column; align-items: flex-start; text-align: left; padding: 30px;">
+                        <span style="margin-bottom: 10px;">3</span>
+                        Ignorar completamente tratamentos legítimos apenas por medo do desconhecido.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container text-center mt-large" data-aos="fade-up"
+                style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p class="section-body text-darker mt-medium">
+                    Mas e se você pudesse ter acesso a um conteúdo reunido em um único lugar, completo, direto e
+                    aprofundado – sem sensacionalismo científico?
+                </p>
+                <p class="section-body text-darker mt-medium">
+                    É exatamente isso que <strong class="text-bold">O Guia Simples dos Peptídeos</strong> entrega. Um
+                    material abrangente, direto ao ponto, para que você tenha o conhecimento mínimo necessário para
+                    dominar o assunto.
+                </p>
+
+                <div class="mt-large">
+                    <a href="https://pay.kiwify.com.br/ZtHeS78" target="_blank" class="btn-solid btn-cyan btn-pulse"
+                        style="font-size: 1.2rem; padding: 20px 40px; display: block; width: 100%; max-width: 400px; margin: 0 auto; box-sizing: border-box; white-space: normal;">
+                        QUERO DOMINAR OS PEPTÍDEOS
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION & ACCORDION (Dark) -->
+        <section class="solution-section dark-section">
+            <div class="container dual-container align-start">
+                <div class="dual-left" data-aos="fade-right">
+                    <h2 class="section-title">Apresentamos o <br class="mobile-break"><span class="highlight-cyan">Guia
+                            Simples dos Peptídeos</span></h2>
+                    <p class="section-body">
+                        O eBook mais objetivo do mercado sobre Peptídeos! Um verdadeiro manual para quem busca entender
+                        o que são, suas características, e os reais benefícios de forma clara. Toda informação reunida
+                        em um só lugar, em linguagem 100% acessível.
+                    </p>
+                    <p class="section-body mt-medium">
+                        Com este material, você finalmente terá um entendimento completo sobre como essas cadeias de
+                        aminoácidos conversam com as suas células, podendo tomar melhores decisões e evitar as
+                        armadilhas perigosas do "achismo".
+                    </p>
+                    <p class="section-highlight mt-medium cyan">O que você vai encontrar:</p>
+                </div>
+                <div class="dual-right" data-aos="fade-left">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><span>1.</span> O que são peptídeos (sem termos técnicos)</h3>
+                            <div class="accordion-content">
+                                <p>Explicação simples de como essas cadeias de aminoácidos atuam como mensageiros no seu
+                                    corpo.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><span>2.</span> Por que eles não são hormônios</h3>
+                            <div class="accordion-content">
+                                <p>A diferença fundamental e por que as pessoas costumam confundir as duas coisas.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><span>3.</span> Para que vêm sendo usados hoje</h3>
+                            <div class="accordion-content">
+                                <p>Descubra as razões reais pelas quais ganham tanta atenção na área da saúde e
+                                    estética.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><span>4.</span> O que é mito e o que é verdade</h3>
+                            <div class="accordion-content">
+                                <p>Destruindo fake news e deixando apenas a ciência traduzida.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><span>5.</span> Para quem esse assunto faz sentido</h3>
+                            <div class="accordion-content">
+                                <p>Quais os perfis que devem realmente se aprofundar nisso e se você se encaixa.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><span>6.</span> O que observar antes de se aprofundar</h3>
+                            <div class="accordion-content">
+                                <p>O guia de precauções e informações cruciais para não ser enganado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="section-body text-xs mt-medium opacity-70">O Guia Simples dos Peptídeos é um manual
+                        detalhado que desvenda tudo o que você minimamente precisa saber, de forma clara, objetiva e sem
+                        sensacionalismo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO IS IT FOR (Dark) -->
+        <section class="who-section dark-section">
+            <div class="container text-center" data-aos="fade-up">
+                <h2 class="section-title mb-large">Para quem é o <span class="highlight-cyan">Guia Simples dos
+                        Peptídeos?</span></h2>
+
+                <div class="bento-grid columns-3">
+                    <div class="bento-card center">
+                        <div class="icon-box" style="margin-bottom: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.6));">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">Entusiastas da Saúde & Biohackers</h4>
+                        <p class="card-body">Para você que deseja entender e dominar o corpo por meio do que há de mais
+                            moderno na vanguarda da ciência.</p>
+                    </div>
+                    <div class="bento-card center">
+                        <div class="icon-box" style="margin-bottom: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="filter: drop-shadow(0 0 8px rgba(138, 43, 226, 0.6));">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">Atletas e Estetas</h4>
+                        <p class="card-body">Que buscam otimizar performance e saúde com base informacional de novas
+                            tendências.</p>
+                    </div>
+                    <div class="bento-card center">
+                        <div class="icon-box" style="margin-bottom: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));">
+                                <path d="M12 2v20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">Profissionais da Saúde</h4>
+                        <p class="card-body">Que precisam traduzir esse vocabulário de forma simples para seus pacientes
+                            e clientes.</p>
+                    </div>
+                </div>
+
+                <div class="text-block-narrow mt-large mx-auto">
+                    <p class="section-body opacity-80 mb-medium">
+                        O Guia Simples não é um material qualquer. Ele foi cuidadosamente estruturado para atender
+                        diferentes perfis de leitores, desde aqueles que apenas "ouviram falar" até profissionais
+                        buscando vocabulário simplificado.
+                    </p>
+                    <p class="section-body opacity-80">
+                        Aqui, você encontrará um conteúdo rápido e sem distorções, permitindo que tome melhores
+                        decisões, compreendendo as inovações com segurança.
+                    </p>
+                    <a href="https://pay.kiwify.com.br/ZtHeS78" target="_blank"
+                        class="btn-solid mt-large btn-pulse">ADQUIRA O
+                        LIVRO AGORA!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFFERENT (Light) -->
+        <section class="different-section light-section">
+            <div class="container dual-container">
+                <div class="dual-left img-center" data-aos="fade-right">
+                    <div class="book-mockup scale-down">
+                        <div class="book-cover">
+                            <h2 class="book-title-big">O Guia Simples<br>dos Peptídeos</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="dual-right" data-aos="fade-left">
+                    <h2 class="section-title text-dark">O Que Torna Esse <span class="highlight-cyan">eBook
+                            Diferente?</span></h2>
+
+                    <ul class="custom-list red-bullets mt-medium">
+                        <li>
+                            <strong class="text-bold text-dark">Nada de achismos ou "dicas de fóruns".</strong> Aqui a
+                            informação é filtrada e entregue mastigada, com base segura.
+                        </li>
+                        <li>
+                            <strong class="text-bold text-dark">Direto ao Ponto.</strong> Não é um tratado científico
+                            chato. A leitura flui de forma leve para que você entenda em poucas horas de leitura no
+                            celular.
+                        </li>
+                        <li>
+                            <strong class="text-bold text-dark">Informação Neutra e Transparente.</strong> Sem
+                            hiper-promessas ou sensacionalismos de mercado. Trata das verdades cruas.
+                        </li>
+                        <li>
+                            <strong class="text-bold text-dark">Feito para Todos os Níveis.</strong> Seja de jaleco ou
+                            calça jeans, o material tem as diretrizes para entender o tema globalmente.
+                        </li>
+                    </ul>
+                    <a href="https://pay.kiwify.com.br/ZtHeS78" target="_blank"
+                        class="btn-solid btn-cyan mt-medium btn-pulse">QUERO SAIR DA DESINFORMAÇÃO!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFER BOX (Dark) -->
+        <section class="offer-section dark-section">
+            <div class="container">
+                <div class="bento-grid columns-2" data-aos="zoom-in" style="align-items: stretch; gap: 40px;">
+
+                    <!-- ESQUERDA: Stack de Valor (Ancoragem) -->
+                    <div
+                        style="padding: 40px; border-radius: 20px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                        <span class="highlight-cyan"
+                            style="font-size: 1.1rem; text-transform: uppercase; font-weight: 800; letter-spacing: 2px;">O
+                            QUE VOCÊ LEVA HOJE:</span>
+                        <h2 style="font-size: 2.2rem; margin-top: 15px; margin-bottom: 30px; line-height: 1.2;">Tudo o
+                            que você precisa para dominar a <span class="highlight-cyan">Ciência dos Peptídeos</span>
+                        </h2>
+
+                        <ul class="custom-list mt-medium" style="font-size: 1.2rem;">
+                            <li style="margin-bottom: 25px;">
+                                <strong style="color: #fff;">O Guia Completo dos Peptídeos</strong><br>
+                                <span style="font-size: 0.95rem; color: rgba(255,255,255,0.7); font-weight: normal;">De
+                                    R$ 97,90 por R$ 00,00</span>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <strong style="color: #fff;">Mecanismos de Ação Destrinchados</strong><br>
+                                <span style="font-size: 0.95rem; color: rgba(255,255,255,0.7); font-weight: normal;">De
+                                    R$ 47,90 por R$ 00,00</span>
+                            </li>
+                            <li>
+                                <strong style="color: #fff;">Dicionário de Termos Científicos</strong><br>
+                                <span style="font-size: 0.95rem; color: rgba(255,255,255,0.7); font-weight: normal;">De
+                                    R$ 27,90 por R$ 00,00</span>
+                            </li>
+                        </ul>
+
+                        <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                            <p style="color: rgba(255,255,255,0.5); font-size: 1.1rem;">Valor total do pacote: <span
+                                    style="text-decoration: line-through;">R$ 173,70</span></p>
+                            <p style="color: var(--accent-cyan); font-size: 1.4rem; font-weight: 800; margin-top: 5px;">
+                                Seu investimento hoje: <span style="font-size: 2rem;">R$ 27,90</span></p>
+                        </div>
+                    </div>
+
+                    <!-- DIREITA: Checkout Box (Conversão) -->
+                    <div class="offer-box"
+                        style="padding: 50px 40px; border-radius: 20px; background: linear-gradient(145deg, rgba(20,20,30,0.95), rgba(5,5,10,0.95)); border: 1px solid rgba(0, 240, 255, 0.3); box-shadow: 0 0 50px rgba(0, 240, 255, 0.1); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+
+                        <!-- Glow effect back -->
+                        <div
+                            style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); width: 250px; height:250px; background: var(--accent-cyan); filter: blur(120px); opacity: 0.15; z-index: 0;">
+                        </div>
+
+                        <div style="position: relative; z-index: 1; text-align: center; width: 100%;">
+                            <div
+                                style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: rgba(255, 0, 0, 0.1); color: #ff4444; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; border: 1px solid rgba(255, 0, 0, 0.3); margin-bottom: 25px; animation: pulse 2s infinite;">
+                                <span
+                                    style="display: inline-block; width: 8px; height: 8px; background: #ff4444; border-radius: 50%;"></span>
+                                Condição Restrita de Lançamento
+                            </div>
+
+                            <h3 style="color: #fff; font-size: 1.6rem; margin-bottom: 30px;">Acesso Imediato ao Material
+                            </h3>
+
+                            <div class="price-display" style="margin: 10px 0 25px 0;">
+                                <span class="currency" style="font-size: 2rem; color: #fff;">R$</span>
+                                <span class="amount"
+                                    style="font-size: 5rem; color: #fff; text-shadow: 0 0 25px rgba(0, 240, 255, 0.5); line-height: 1;">27,90</span>
+                            </div>
+
+                            <a href="https://pay.kiwify.com.br/ZtHeS78" target="_blank"
+                                class="btn-solid btn-cyan btn-pulse"
+                                style="font-size: 1.2rem; padding: 22px 40px; width: 100%; box-shadow: 0 0 30px rgba(0, 240, 255, 0.4); margin-bottom: 20px;">
+                                QUERO APROVEITAR AGORA
+                            </a>
+
+                            <!-- Selos SVG de Segurança (Substituindo PNG) -->
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; gap: 15px; opacity: 0.6; margin-bottom: 15px;">
+                                <!-- PIX -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" class="color-white" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m12 2-5 5 5 5 5-5-5-5z"></path>
+                                    <path d="m12 12-5 5 5 5 5-5-5-5z"></path>
+                                </svg>
+                                <!-- SECURITY LOCK -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" class="color-white" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <!-- CARDS -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" class="color-white" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                </svg>
+                            </div>
+                            <span style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Pagamento 100% Criptografado
+                                e Seguro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Garantia -->
+                <div class="guarantee-box mt-large" data-aos="fade-up"
+                    style="display: flex; flex-direction: row; align-items: center; background: rgba(0, 255, 128, 0.05); border: 1px solid rgba(0, 255, 128, 0.3); border-left: 5px solid #00ff80; padding: 30px; border-radius: 12px; max-width: 900px; margin-left: auto; margin-right: auto; gap: 20px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                        stroke="#00ff80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        style="flex-shrink: 0; filter: drop-shadow(0 0 10px rgba(0, 255, 128, 0.4));">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                    <div style="text-align: left;">
+                        <h4 style="color: #00ff80; font-size: 1.4rem; margin-bottom: 8px;">Risco Zero: 7 Dias de
+                            Garantia Incondicional</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 1rem; margin: 0; line-height: 1.5;">
+                            Garantimos sua satisfação total. Se em até 7 dias você achar que o formato ou o conteúdo não
+                            é para você, basta enviar uma única mensagem e devolveremos 100% do seu dinheiro. Sem
+                            explicações chatas. <strong>O único risco que você corre aqui é ficar para trás e continuar
+                                perdido na próxima roda de conversa.</strong></p>
+                    </div>
+                </div>
+
+                <!-- Footer Matador -->
+                <div class="offer-footer mt-large" data-aos="fade-up"
+                    style="padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; line-height: 1.6;">
+                        Amanhã você pode continuar "boiando" nas discussões quando o assunto for a fronteira da
+                        vanguarda da saúde... <br><br> Ou você pode <strong style="color: #fff;">investir R$ 27,90
+                            hoje</strong>, dominar os conceitos principais nas próximas horas e assumir o controle desse
+                        conhecimento de uma vez por todas. <strong class="highlight-cyan">A decisão é sua!</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- AVISO MEDICO (Disclaimer adicionado no redesign premium) -->
+            <div class="container mt-large">
+                <div class="disclaimer-card" data-aos="fade-up">
+                    <div class="disclaimer-icon">⚠️</div>
+                    <h3 class="disclaimer-title">Aviso de Responsabilidade e Saúde</h3>
+                    <p class="disclaimer-text">Este eBook possui caráter estritamente instrucional e informativo. O
+                        conhecimento compartilhado aqui visa educar e desmistificar o tema dos peptídeos.</p>
+                    <p class="disclaimer-text mt-small"><strong>Em nenhuma hipótese</strong> este material substitui uma
+                        consulta, acompanhamento clínico ou prescrição médica. Para a administração de qualquer produto
+                        ou terapia, a avaliação de um profissional de saúde qualificado é obrigatória.</p>
+                </div>
             </div>
         </section>
 
     </main>
 
+
+
+    <footer class="footer-dark">
+        <div class="container text-center">
+            <h2 class="footer-logo">PEPTÍDEOS</h2>
+            <p class="opacity-50 font-sm">A NOVA FRONTEIRA DA MEDICINA MOLECULAR</p>
+            <p class="opacity-30 font-xs mt-medium">Copyright 2026 © Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script>
+        AOS.init({ disableMutationObserver: true, once: true });
+
+        // Accordion script
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                } else {
+                    accordionContent.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

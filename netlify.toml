@@ -3,7 +3,8 @@
 
 [dev]
   publish = "."
-  port = 8888
+  port = 8889
+  targetPort = 4001
   framework = "#static"
   autoLaunch = false
 
