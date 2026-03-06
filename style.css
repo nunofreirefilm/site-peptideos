@@ -56,7 +56,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/images/dna.jpg');
+    background-image: url('/.netlify/images?url=/images/dna.jpg&q=80');
     background-size: cover;
     background-position: center;
     opacity: 0.08;
@@ -495,7 +495,7 @@ body::before {
 .book-cover {
     width: 100%;
     height: 100%;
-    background: url('/images/capa-referencia-azul.png');
+    background: url('/.netlify/images?url=/images/capa-referencia-azul.png&w=600&q=80');
     background-size: cover;
     background-position: center;
     border-radius: 4px 12px 12px 4px;
