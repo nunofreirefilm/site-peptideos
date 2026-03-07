@@ -799,6 +799,93 @@ body::before {
 }
 
 /* =========================================
+   SECTION IMAGES (Peptide visuals)
+========================================= */
+.section-image-banner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-image-banner img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    animation: imgGlow 4s ease-in-out infinite alternate;
+}
+
+.section-image-centered {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-image-centered img {
+    max-width: 700px;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 240, 255, 0.06);
+    display: block;
+    margin: 0 auto;
+    animation: imgGlow 4s ease-in-out 1s infinite alternate;
+}
+
+.section-image-side {
+    text-align: center;
+}
+
+.section-image-side img {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 240, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 240, 255, 0.08);
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section-image-side img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 50px rgba(0, 240, 255, 0.15);
+}
+
+.section-image-inline {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-image-inline img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 0 auto 20px auto;
+    animation: imgGlow 4s ease-in-out 2s infinite alternate;
+}
+
+@keyframes imgGlow {
+    0% {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 rgba(0, 240, 255, 0);
+    }
+    100% {
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(0, 240, 255, 0.15), 0 0 60px rgba(0, 240, 255, 0.05);
+    }
+}
+
+/* =========================================
    OFFER BOX
 ========================================= */
 .offer-box {
@@ -974,9 +1061,23 @@ body::before {
         display: block;
     }
 
+    .dark-section,
+    .light-section,
+    .light-section-alt {
+        padding: 60px 0;
+    }
+
+    .mt-large {
+        margin-top: 35px;
+    }
+
+    .mb-large {
+        margin-bottom: 35px;
+    }
+
     .dual-container {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
     }
 
     .reverse-mobile {
@@ -1064,5 +1165,17 @@ body::before {
 
     .price-display .amount {
         font-size: 4rem;
+    }
+
+    .section-image-banner img {
+        height: 180px;
+    }
+
+    .section-image-centered img {
+        height: 220px;
+    }
+
+    .section-image-side img {
+        max-width: 220px;
     }
 }
